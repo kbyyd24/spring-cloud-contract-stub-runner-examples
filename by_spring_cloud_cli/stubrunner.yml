@@ -1,0 +1,5 @@
+stubrunner:
+  stubsMode: LOCAL
+  workOffline: true
+  ids:
+    - com.github.hippoom:ldd-backend-stubs:+:9999
