@@ -1,0 +1,1 @@
+java -jar stub-runner.jar --stubrunner.ids=com.github.hippoom:ldd-backend-stubs:+:9999 --stubrunner.stubsMode=LOCAL --stubrunner.workOffline=true
