@@ -1,12 +1,18 @@
 buildscript {
 	ext {
 		springBootVersion = '2.0.1.RELEASE'
+        testDataBuilderVersion = '0.5.0'
 	}
 	repositories {
-		mavenCentral()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://repo.spring.io/snapshot' }
+        maven { url 'https://repo.spring.io/milestone' }
+        maven { url "https://repo.spring.io/release" }
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath group: 'com.github.hippoom', name: 'test-data-builder', version: testDataBuilderVersion
 	}
 }
 
@@ -21,8 +27,11 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
-	mavenCentral()
-	maven { url "https://repo.spring.io/milestone" }
+    jcenter()
+    mavenCentral()
+    maven { url 'https://repo.spring.io/snapshot' }
+    maven { url 'https://repo.spring.io/milestone' }
+    maven { url "https://repo.spring.io/release" }
 }
 
 
@@ -32,8 +41,10 @@ ext {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.springframework.cloud:spring-cloud-starter-contract-stub-runner')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.cloud:spring-cloud-starter-contract-stub-runner')
+    testCompile group: 'com.github.hippoom', name: 'test-data-builder', version: testDataBuilderVersion
 }
 
 dependencyManagement {

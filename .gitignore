@@ -7,9 +7,10 @@ build/
 *.iws
 *.iml
 *.ipr
-/out/
+out/
 
 .vscode/
 *.classpath
 .project
 .settings
+bin/
