@@ -1,0 +1,9 @@
+== Setup by Docker
+
+Spring provides a docker image to start a stub runner.
+
+The docker image https://hub.docker.com/r/springcloud/spring-cloud-contract-stub-runner/[here], and the https://cloud.spring.io/spring-cloud-static/spring-cloud-contract/2.0.0.M8/single/spring-cloud-contract.html#stubrunner-docker[document] show how to use it.
+
+You can see the example in 
+include::docker-compose.yml[]
+.
