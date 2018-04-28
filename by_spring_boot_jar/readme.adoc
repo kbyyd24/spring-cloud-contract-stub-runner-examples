@@ -1,0 +1,5 @@
+== Setup by Fat Jar
+
+Spring provides a fat jar `spring-cloud-contract-stub-runner-boot` to start stub runner.
+
+You can see the document https://cloud.spring.io/spring-cloud-static/spring-cloud-contract/2.0.0.M8/single/spring-cloud-contract.html#_stub_runner_server_fat_jar[here]

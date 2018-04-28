@@ -1,0 +1,20 @@
+== Setup by Spring Cloud CLI
+
+For this way, you need to install Spirng Cloud CLI https://cloud.spring.io/spring-cloud-cli/[doc]
+
+[source,shell]
+----
+sdk i springboot
+spring install org.springframework.cloud:spring-cloud-cli:1.4.0.RELEASE
+----
+
+Then you can start stub runner by Spring Cloud CLI
+
+[source,shell]
+----
+spring cloud stubrunner
+----
+
+In order to pass the configuration just create a `stubrunner.yml` file in the current working directory or a subdirectory called `config` or in `\~/.spring-cloud`.
+
+See in Spring doc https://cloud.spring.io/spring-cloud-static/spring-cloud-contract/2.0.0.M8/single/spring-cloud-contract.html#_spring_cloud_cli

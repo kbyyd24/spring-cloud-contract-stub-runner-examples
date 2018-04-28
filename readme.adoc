@@ -6,8 +6,14 @@ It only work for consumers which is JVM languages like Java, Groovy and so on. I
 
 We can setup a mock server by contracts, so that we can use contracts for test.
 
-.By Spring code:
+.By Spring code
 include::by_code/readme.adoc[]
 
-.By Docker:
+.By Docker
 include::by_docker/readme.adoc[]
+
+.By Fat Jar
+include::by_spring_boot_jar/readme.adoc[]
+
+.By Spring Cloud CLI
+include::by_spring_cloud_cli/readme.adoc[]
