@@ -5,3 +5,5 @@ We can use `spring-cloud-contact-stub-runner` for test, it will setup stubs in t
 It only work for consumers which is JVM languages like Java, Groovy and so on. If our consumer is written by JavaScript or Python, we cannot use it.
 
 We can setup a mock server by contracts, so that we can use contracts for test.
+
+include::by_code/readme.adoc[]

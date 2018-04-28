@@ -1,0 +1,36 @@
+== Setup by Spring code
+
+The repo depends on https://github.com/spring-cloud-samples/stub-runner-boot[stub-runner-boot]
+
+[source,groovy]
+----
+compile('org.springframework.cloud:spring-cloud-starter-contract-stub-runner')
+----
+
+Add annotation `@EnableStubRunnerServer` for `Application` class
+
+[source,java]
+----
+@SpringBootApplication
+@EnableStubRunnerServer // <1>
+public class LddStubRunnerApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(LddStubRunnerApplication.class, args);
+    }
+}
+----
+<1> need spring-cloud-starter-contract-stub-runner-boot
+
+Config for contracts stubs jar
+
+[source, yml]
+----
+stubrunner:
+  # artifact ids containing stubs to be downloaded
+  ids: com.example.groupid:artifactid:version:classifier:stubs-port
+  # url of where the stubs reside
+  repositoryRoot: http://localhost:8081/artifactory/libs-release-local
+----
+
+After these, run your application, stub runner is starting for `stubs-port`.
