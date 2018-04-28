@@ -1,1 +1,2 @@
+wget -O stub-runner.jar http://search.maven.org/remotecontent?filepath=org/springframework/cloud/spring-cloud-contract-stub-runner-boot/1.2.4.RELEASE/spring-cloud-contract-stub-runner-boot-1.2.4.RELEASE.jar
 java -jar stub-runner.jar --stubrunner.ids=com.github.hippoom:ldd-backend-stubs:+:9999 --stubrunner.stubsMode=LOCAL --stubrunner.workOffline=true
